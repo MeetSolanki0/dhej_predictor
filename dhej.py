@@ -222,7 +222,7 @@ if analysis_type == "📈 Overview Dashboard":
 elif analysis_type == "🔍 Detailed Analysis":
     st.subheader("🔍 Deep Dive Analysis")
     
-    # Filters
+    # Filter
     col1, col2, col3 = st.columns(3)
     with col1:
         selected_jobs = st.multiselect("Select Job Titles", df['Job Title'].unique(), default=df['Job Title'].unique()[:3])
